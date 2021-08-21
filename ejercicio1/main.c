@@ -4,7 +4,12 @@
 #include "fun.h"
 int main(int argc, char const *argv[])
 {
-    int *alturas,*i,largo;//valores de las alturas en cm
+    /*me tira un error que no se como solucionarlo"main.c fun.c -Wall
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: en la función `_start':
+(.text+0x24): referencia a `main' sin definir
+collect2: error: ld returned 1 exit status*/
+
+    int *alturas,*i,largo;
     float promedio,desvio;
     i=alturas;
     largo=cargar(i);
