@@ -1,0 +1,37 @@
+1. 
+¿Cuál es la diferencia entre un header y una librería? ¿Qué contiene cada uno? ¿Dónde
+especificamos la inclusión de un header en nuestro programa?
+
+respuesta:
+el header contiene las declaraciones de nuestras funciones pero no lo que que seria la funcion es si, las funciones estan dentro de la libreria
+----------------------------------------------------------------------------------------------------
+2. 
+Dado la siguiente declaración de variables:
+char c1,c2,c3;
+int v[5] = {45,32,11,5,28};
+float f1,f2;
+Asumiendo que el sistema operativo nos asigna la dirección 0xcdfa0010 para el comienzo del
+mismo, números de punto flotante IEEE754 de precisión simple y enteros de 2byte responda:
+a) ¿Qué dirección de memoria contendrá el valor de v[2] ?
+b) ¿Qué dirección de memoria resultará de resolver v+3 ?
+c) Recibiríamos algún error durante la compilación o el linkeo si tratáramos de acceder al
+contenido de v+10? Justifique su respuesta.
+d) Indique en que posición de memoria comienza la variable f1.
+
+respuesta:
+teniendo en cuenta que int ocupa 4 byte y char 1 byte
+a) la direccion de memoria que contendra v[2] es 0xcdfa0025 incluyendo a las variables c1,c2,c3
+b) la direccion de memoria a la que me enviara v+3 es 0xcdfa0016 
+c) la direccion de memoria a la que me enviara v+10 es 0xcdfa0023, no resiviremos ningun error ya que ese espacio esta siendo ocupado por la variable 11
+d) la direccion de memoria en la que comiensa "f1" es 0xcdfa0033
+----------------------------------------------------------------------------------------------------
+3. ¿En que situaciones el uso de un puntero a función nos puede ayudar? De un ejemplo practico
+de uso de punteros a función.
+
+respuesta:
+
+----------------------------------------------------------------------------------------------------
+4. ¿Cuál es la diferencia entre un archivo .o y un archivo .c? Ej: miprog.o y miprog.c
+
+respuesta:
+la diferencia entre un archivo.c y un archivo.o es que que el archivo .o es el ejecutable de lo que se programe en el archivo .c, en .c se tiene todo el codigo de lo que luego
